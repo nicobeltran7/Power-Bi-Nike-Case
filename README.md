@@ -462,7 +462,3 @@ nike-pl-dashboard/
 - Focus on demonstrating **P&L statement construction**, **data manipulation**, and **data cleaning techniques**
 
 ---
-
-⭐ If you found this project interesting or helpful, please consider giving it a star!
-
-💼 **Open to opportunities** - Feel free to reach out if you'd like to discuss this project or potential collaborations!
