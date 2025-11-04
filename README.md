@@ -1,7 +1,5 @@
 # Nike P&L Financial Dashboard 📊
-
-<img width="1517" height="849" alt="image" src="https://github.com/user-attachments/assets/be97b0e0-d2af-402c-a2b5-29872b084548" />
-
+<img width="1517" height="848" alt="image" src="https://github.com/user-attachments/assets/8cdcd3cf-ecf9-4550-8155-40278513a9bd" />
 
 ## 📋 Project Overview
 
@@ -314,58 +312,45 @@ Sum Line Amounts (Base)
 - **Responsive Design**: Optimized for various screen sizes
 - **Consistent Styling**: Uniform formatting across all visualizations
 
-## 📁 Project Structure
+## 📁 Repository Structure
 
 ```
 nike-pl-dashboard/
 │
-├── 📊 Data/
-│   ├── FactPLTran.csv              # Transaction fact table (2017-2021)
-│   ├── DimDate.csv                 # Date dimension with hierarchies
-│   ├── DimPLLineItems.csv          # P&L structure and line items
-│   ├── DimStore.csv                # Store locations and regions
-│   └── DimAcc.csv                  # Account master data
+├── 📁 Data/
+│   ├── DimAcc.xlsx                 # Account dimension
+│   ├── DimDate.xlsx                # Date dimension
+│   ├── DimPLLineItems.xlsx         # P&L structure
+│   ├── DimStore.xlsx               # Store locations
+│   └── FactPLTran.xlsx             # Transaction data
 │
-├── 📐 Data Model/
-│   ├── Relationships               # Star schema configuration
-│   ├── Hierarchies                 # Date and P&L hierarchies
-│   └── Data Types                  # Type definitions and formatting
+├── 📁 PowerBI/
+│   └── Nike_PL_Dashboard.pbix      # Power BI project file
 │
-├── 🧮 Measures/
-│   ├── Base Measures/
-│   │   ├── Sum Line Amounts        # Foundation aggregation
-│   │   ├── Sum Revenue             # Revenue calculation
-│   │   ├── SUM COGS               # Cost of goods sold
-│   │   └── Sum Expenses            # Expense aggregation
-│   │
-│   ├── Profitability Measures/
-│   │   ├── Gross Profit            # Revenue - COGS
-│   │   └── Gross Margin            # Gross profit %
-│   │
-│   ├── Dynamic Calculations/
-│   │   ├── Line Amount             # Revenue/Expense switcher
-│   │   ├── PL Subtotal             # Running total logic
-│   │   ├── % Revenue               # Vertical analysis
-│   │   └── PLAmt                   # Master display measure
-│   │
-│   └── Formatting/
-│       └── USD                     # Conditional formatting
-│
-├── 📈 Visualizations/
-│   ├── KPI Cards                   # Revenue, margin, key metrics
-│   ├── P&L Matrix                  # Detailed financial statement
-│   ├── Revenue by Region           # Geographic breakdown
-│   ├── Product Line Chart          # Men's vs Women's comparison
-│   └── Year Slicer                 # Time period filter
-│
-├── 🎨 Design Assets/
-│   ├── Color Theme                 # Nike brand colors
-│   ├── Logo                        # Nike swoosh branding
-│   └── Custom Formatting           # Conditional styling rules
-│
-└── 📄 Dashboard/
-    └── Nike_PL_Dashboard.pbix      # Power BI project file
+└── 📄 README.md                     # Project documentation
 ```
+
+> **Note**: DAX measures are stored within the `.pbix` file itself. Power BI does not require separate DAX files in the repository, as all measures, calculations, and data model configurations are embedded in the Power BI Desktop file.
+
+## 🔮 Next Steps & Future Enhancements
+
+### Planned Improvements
+- [ ] **What-If Analysis**: Add parameter sliders for scenario modeling and forecasting
+- [ ] **Variance Analysis**: Implement budget vs actual comparisons with variance calculations
+- [ ] **Drill-Through Pages**: Create detailed transaction-level pages for deeper investigation
+- [ ] **Mobile Layout**: Optimize dashboard for mobile viewing and touch interactions
+- [ ] **Bookmarks**: Add saved views for different stakeholder perspectives
+- [ ] **Advanced Visualizations**: Incorporate waterfall charts for P&L flow analysis
+- [ ] **Row-Level Security**: Implement RLS for region-specific data access
+- [ ] **Incremental Refresh**: Configure for handling larger datasets efficiently
+
+### Skills to Explore
+- Power BI Service deployment and sharing
+- Integration with Excel for dynamic reporting
+- Custom visuals from AppSource
+- Power Automate for scheduled refreshes
+- Python/R integration for advanced analytics
+
 ## 📊 Key Insights
 
 - **Revenue Growth**: Track Nike's revenue trajectory from 2017 to 2021
@@ -468,6 +453,16 @@ nike-pl-dashboard/
 - ⭐ **Documentation**: Creating comprehensive technical and user documentation
 - ⭐ **Performance Optimization**: Query efficiency and dashboard responsiveness
 
+## 🙏 Acknowledgments
+
+- Case study provided by **Career Principles**
+- Project created for **educational and portfolio demonstration purposes**
+- Data is **fictional** and does not represent actual Nike financial information
+- Power BI community for best practices and inspiration
+- Focus on demonstrating **P&L statement construction**, **data manipulation**, and **data cleaning techniques**
+
 ---
 
-⭐ If you found this project interesting, please consider giving it a star!
+⭐ If you found this project interesting or helpful, please consider giving it a star!
+
+💼 **Open to opportunities** - Feel free to reach out if you'd like to discuss this project or potential collaborations!
